@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="CSS/normalize.css" rel=stylesheet>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+         <form id="kmiForm">
+             <div class="row form-inline mt-5 ml-5">
+                 <label for="mass" name="mass" class="m-3 mr-4">Mass:</label>
+                 <input type="number" id="mass" class="form-control" placeholder="kg">
+             </div>
+              <div class="row form-inline ml-5">
+                 <label for="height" class="m-3">Height:</label>
+                 <input type="number" name="height" id="height" class="form-control" placeholder="cm">
+             </div>
+             <div class="row ml-5">
+                 <button type="submit" class="btn btn-warning">Calculate</button>
+             </div>
+         </form>
+         <div class="row">
+             <h3 class="ml-5 mt-3"><span id="answer"></span></h3>
+         </div>
+    </div>
+    <script src="script.js"></script>
+</body></html>

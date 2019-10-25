@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+div div:nth-child(1) h2 {
+    color: lightslategray;
+}
+
+div div:nth-child(2) h2 {
+    font-weight: bold;
+}

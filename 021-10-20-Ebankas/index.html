@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Bankas</title>
+    <link href="CSS/normalize.css" rel=stylesheet>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/67df6a2796.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-6">
+            </div>
+            <div class="col-2 mt-3">
+               <button class="btn btn-info d-none" id="reset"><i class="fas fa-sync"></i></button>
+                <button class="btn btn-info" id="sortUp"><i class="fas fa-sort-up"></i></button>
+                <button class="btn btn-info" id="sortDown"><i class="fas fa-sort-down"></i></button>
+                <button class="btn btn-info" id="filter"><i class="fas fa-filter"></i></button>
+
+            </div>
+            <div class="col-4">
+                <form id="ok" class="form-inline d-none">
+                    <div class="form-row mt-3">
+                        <div class="form-group col-5">
+                            <input class="form-control" size="5" type="text" name="fromAmmount" placeholder="Nuo...">
+                        </div>
+                        <div class="form-group col-5">
+                            <input class="form-control" size="5" type="text" name="toAmmount" placeholder="Iki...">
+                        </div>
+                        <div class="form-group col-2">
+                            <button class="btn btn-info" type="submit">OK</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="m-3">
+                    <div class="border-info border rounded-lg">
+                        <h3 class="text-center bg-info rounded text-white m-1">E-Bankas</h3>
+                        <form id="bank-form">
+                            <div class="row m-2">
+                                <label for="action" class="col-3 text-left">Veiksmas:</label>
+                                <input required pattern="([0-9]{1,}[.][0-9]{1,2})|([0-9]{1,})" id="action" type="text" class="col-6" name="action">
+                                <select id="select" class="col-3" name="select">
+                                    <option selected>Papildyti</option>
+                                    <option>Pasiimti</option>
+                                </select>
+                            </div>
+                            <div class="row m-2">
+                                <label for="purpose" class="col-3 text-left">Paskirtis:</label>
+                                <input class="col-9" type="text" name="purpose" id="purpose">
+                            </div>
+                            <div class="row m-2">
+                                <button class="btn btn-info btn-block" type="submit">Atlikti veiksmą</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="border-info border rounded-lg mt-3">
+                        <h3 class="text-center text-info">Likutis: <span id="balance"></span> </h3>
+                    </div>
+
+                    <div class="border-info border rounded-lg mt-3">
+                        <h3 class="text-center text-danger" id="warning"> </h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 mt-3">
+                <ul class="list-group" id="unordered-list"></ul>
+            </div>
+        </div>
+    </main>
+    <script src="SCRIPTS/script.js"></script>
+</body></html>

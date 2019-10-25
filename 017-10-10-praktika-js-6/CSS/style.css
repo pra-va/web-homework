@@ -1,0 +1,23 @@
+.container {
+    width: 50%;
+}
+
+#top-img {
+    width: 30%;
+}
+
+#para-img {
+    width: 30%;
+    display: inline;
+    display: none;
+    float: left;
+    
+}
+
+.bg-html {
+    background-image: url("../IMG/1200px-HTML5_logo_and_wordmark.svg.png");
+    background-size: 19%;
+    background-repeat: no-repeat;
+    background-position: center
+}
+

@@ -1,0 +1,12 @@
+body {
+    background-image: url("../IMG/tiago-muraro-pwMds57bapI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300%;
+}
+
+.btn {
+    background-color: aliceblue;
+    font-size: 2em;
+}

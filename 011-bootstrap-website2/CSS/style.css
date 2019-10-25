@@ -1,0 +1,64 @@
+.jumbotron {
+    background: url("../IMG/foto3.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    
+} 
+
+#alpha {
+    background: rgba(255,255,255,0.7);
+}
+
+#portrait {
+    width: 9em;
+    height: 9em;
+    object-fit: cover; 
+}
+
+.qoute {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.image {
+    width: 100%;
+}
+
+.container{
+    width: 65%
+}
+
+#partners {
+    width: 100%;
+}
+
+.btn-outline-dark {
+    border-radius: 0;
+}
+
+.row {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.increased-size {
+    font-size: 1.3em;
+}
+
+.decreased-size {
+    font-size: 0.8em;
+}
+
+footer {
+    background-color: rgb(43, 43, 41);
+    color: white;
+}
+
+#bottom-part {
+    background-color: black;
+    color: rgb(62, 62, 61);
+}
+
+.icon-size {
+    font-size: 1.6em
+}
