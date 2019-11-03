@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+a, h1 {
+    color: #8C489F;
+}
+
+.display-4 {
+    font-weight: 900;
+}
+
+.jumbotron {
+    background-color: #C3C3E5;
+}
+
+
+.btn-primary {
+    background-color: #8C489F;
+    margin-bottom: 0;
+}
+
+.progress-bar {
+    background-color: #8C489F;
+}
+
+i {
+    font-size: 2em;
+    color: #8C489F;
+}
+
+.btn-primary .card{
+    margin-bottom: 5em;
+}
+
+hr {
+    border-top: 1px solid  #443266;
+}
