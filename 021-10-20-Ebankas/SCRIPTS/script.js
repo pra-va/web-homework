@@ -71,6 +71,7 @@ sortForm.addEventListener("submit", (e) => {
             addListItem(transactionList[i][1], transactionList[i][2]);
         }
     }
+    console.log(transactionList);
     
     sortForm.classList.add("d-none");
     sortUp.classList.add("d-none");
@@ -115,6 +116,7 @@ sortUp.addEventListener("click", () => {
     moneyIn.sort(sortArray);
     moneyOut.sort(sortArray);
 
+    balance = 0;
 
     restartList(moneyIn);
     restartList(moneyOut);
@@ -136,6 +138,8 @@ sortDown.addEventListener("click", () => {
     moneyIn.sort(reverseSortArray);
     moneyOut.sort(reverseSortArray);
 
+    balance = 0;
+
     restartList(moneyIn);
     restartList(moneyOut);
 });
@@ -147,14 +151,14 @@ filter.addEventListener("click", () => {
 function renewBalance(ammount = 0) {
     if (ammount >= 0) {
         balance = Number(balance) + Number(ammount);
-        moneyBalance.textContent = balance;
+        moneyBalance.textContent = Math.round(balance * 100) /100;
         warningWindow.textContent = "";
         return true;
     }
 
     if (-ammount <= balance) {
         balance = Number(balance) + Number(ammount);
-        moneyBalance.textContent = balance;
+        moneyBalance.textContent = Math.round(balance * 100) /100;
         warningWindow.textContent = "";
         return true;
     } else {
@@ -186,11 +190,12 @@ function restartList(list) {
     for (i = 0; i < list.length; i++) {
         if (list[i][0] === "-") {
             addListItem(-list[i][1], list[i][2]);
-            balance -= list[i][1];
+            balance -= Number(list[i][1]);
         } else {
             addListItem(list[i][1], list[i][2]);
-            balance += list[i][1];
+            balance += Number(list[i][1]);
         }
+        console.log(balance);
     }
     renewBalance();
 }
