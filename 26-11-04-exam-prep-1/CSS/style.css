@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+.jumbotron {
+    background-image: url("../IMG/fudo-jahic-f8wkxN5AjN8-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50em;
+    margin: 0;
+    padding: 0;
+}
+
+#filter {
+    background-color: rgba(189, 27, 27, 0.5);
+    height: inherit;
+    width: inherit;
+}
+
+#jumbo-text {
+    padding: 15em 0;
+}
+
+#star {
+    font-size: 12em;
+}
+
+#second-article {
+    background: url("IMG/fudo-jahic-f8wkxN5AjN8-unsplash.jpg");
+}
